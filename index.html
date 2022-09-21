@@ -5,15 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>장소연의 포트폴리오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+    <script src="js/skill.js"></script>
     <style>
-        body{
-            width: 1440px;
-            height: 6660px;
-            background-image: url(image/Example.png);
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+      #background {
+        width: 1440px;
+        height: 6660px;
+        margin: 0 auto;
+        background-image: url(image/Example.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.6;
+        z-index: -100;
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <!-- 임시설정 -->
+    <div id="background"></div>
+    <!-- 임시설정 -->
+    <header id="header">
+      <div class="header_inner"></div>
+    </header>
+    <!-- // header -->
+    <main>
+      <div id="banner">
+        <div class="banner_inner"></div>
+      </div>
+      <!-- // #banner -->
+      <div id="content1">
+        <div class="content1_inner"></div>
+      </div>
+      <!-- // #content1 -->
+      <div id="content2">
+        <div class="content2_inner">
+          <div class="animation">
+            <div class="skill_1">
+              <div class="progress-bar">
+                <p>HTML</p>
+                <div class="rate" data-rate="90"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="progress-bar">
+                <p>CSS</p>
+                <div class="rate" data-rate="90"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="progress-bar">
+                <p>Javascript</p>
+                <div class="rate" data-rate="70"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="progress-bar">
+                <p>jQuery</p>
+                <div class="rate" data-rate="70"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="skill_2">
+              <div class="progress-bar">
+                <p>SCSS</p>
+                <div class="rate" data-rate="80"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="progress-bar">
+                <p>Photoshop</p>
+                <div class="rate" data-rate="90"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="progress-bar">
+                <p>Illustrator</p>
+                <div class="rate" data-rate="80"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="progress-bar">
+                <p>Figma</p>
+                <div class="rate" data-rate="90"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // #content2 -->
+    </main>
+    <!-- // main -->
+  </body>
 </html>

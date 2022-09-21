@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ds {
+  display: none;
+}
