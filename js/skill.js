@@ -1,6 +1,6 @@
 $(function () {
   const progressBox = $(".progress-bar");
-  const progressOst = $(".animation").offset().top - 600;
+  const progressOst = $(".my_skills").offset().top - 600;
   let isAni = false;
 
   $(window).scroll(function () {
