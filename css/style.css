@@ -68,7 +68,7 @@
   bottom: 0;
   transform-origin: left;
   transform: scaleX(0);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .header_in > nav > ul > li > a:hover:after {
   transform: scaleX(1);
@@ -88,7 +88,7 @@ main {
 .banner_in {
   max-width: 1440px;
   width: 100%;
-  height: 700px;
+  height: auto;
   margin: 0 auto;
   background-color: #f9f9f9;
 }
@@ -96,7 +96,7 @@ main {
 .banner_ct {
   max-width: 520px;
   width: 100%;
-  height: auto;
+  height: 700px;
   margin-left: 210px;
   display: flex;
   flex-direction: column;
@@ -152,37 +152,119 @@ main {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+.banner_btt > button:last-child {
+  margin-right: 0;
+}
 .banner_btt > button:hover {
   background-color: #f24c4c;
   color: #ffffff;
   border: 1px solid #f24c4c;
 }
-/* ============================== conten1 */
-#content1 {
+/* ========================= section1 */
+#section1 {
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.content1_inner {
-  max-width: 1440px;
+/* section1 > section1_in */
+.section1_in {
+  max-width: 1180px;
   width: 100%;
+  /* height: auto; */
   height: 840px;
   margin: 0 auto;
-  background-color: rgba(0, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.5);
 }
-/* ============================== conten2 */
-#content2 {
+/* section1_in > section1_title */
+.section1_title {
+  margin-top: 100px;
+}
+.section1_title > p {
+  color: #f24c4c;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.section1_title > p:last-child {
+  color: #333333;
+  font-size: 36px;
+  line-height: 60px;
+}
+/* section1_in > section1_ct */
+.section1_ct {
   width: 100%;
   height: auto;
-  background-color: rgba(249, 249, 249, 0.5);
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: space-between;
 }
-.content2_inner {
+/* section1_ct > section1_img */
+.section1_img {
+  position: relative;
+  z-index: 0;
+}
+.section1_img > img {
+  width: 423px;
+}
+.section1_img > .rectangle {
+  width: 423px;
+  height: 500px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+/* section1_ct > section1_txt */
+.section1_txt {
+  width: 652px;
+  height: auto;
+  margin-top: 20px;
+}
+.section1_txt p {
+  color: #333333;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.section1_txt .sec_txt_tit {
+  color: #f24c4c;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+/* section1_txt > sec1_txt */
+.sec1_txt1 {
+  display: flex;
+}
+.sec1_txt1 > p:nth-child(1) {
+  margin-right: 40px;
+}
+
+/*  */
+/*  */
+/* ========================= section2 */
+#section2 {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.section2_inner {
   max-width: 1440px;
   width: 100%;
   height: 580px;
   margin: 0 auto;
   padding-top: 292px;
-  background-color: rgba(249, 249, 249, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /* 스킬 구간 */
 .animation {
