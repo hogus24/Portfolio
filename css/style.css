@@ -573,7 +573,7 @@ main {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
-.project_btt > button:nth-of-type(3) {
+.project_btt > button:last-of-type {
   margin-right: 0;
 }
 .project_btt > button:hover {
@@ -641,7 +641,6 @@ main {
   width: 100%;
   height: auto;
   background-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 /* section4 > section4_in */
 .section4_in {
@@ -651,7 +650,6 @@ main {
   height: auto;
   background-color: #ffffff;
   height: 920px;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 /* section4_in > section4_title */
 .section4_title {
@@ -673,6 +671,48 @@ main {
 }
 /* section4_in > section4_ct */
 .section4_ct {
+  width: auto;
+  height: auto;
+  margin-top: 80px;
+  padding-bottom: 82px;
+  display: flex;
+  justify-content: center;
+}
+/* ========================= section5 */
+#section5 {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+/* section5 > section5_in */
+.section5_in {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background-color: #ffffff;
+  height: 920px;
+}
+/* section5_in > section5_title */
+.section5_title {
+  padding-top: 100px;
+}
+.section5_title > p {
+  color: #f24c4c;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.section5_title > p:last-child {
+  color: #333333;
+  font-size: 36px;
+  line-height: 60px;
+}
+/* section5_in > section5_ct */
+.section5_ct {
   width: auto;
   height: auto;
   margin-top: 80px;
