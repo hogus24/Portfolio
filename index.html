@@ -39,7 +39,7 @@
         top: 0;
         left: 0;
         right: 0;
-        opacity: 0.5;
+        opacity: 0.9;
         z-index: -100;
       }
     </style>
@@ -51,15 +51,15 @@
       <header id="header">
         <div class="header_in">
           <h1>
-            <a href="#">
+            <a href="https://hogus24.github.io/Portfolio/">
               <img src="image/Icon_logo.jpg" alt="로고 이미지" />
             </a>
           </h1>
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Project</a></li>
+              <li><a href="#banner">Home</a></li>
+              <li><a href="#section1">About</a></li>
+              <li><a href="#section3">Project</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
@@ -81,8 +81,12 @@
               </div>
               <!-- // .banner_txt -->
               <div class="banner_btt">
-                <button type="button">이력서 보기</button>
-                <button type="button">깃허브 보기</button>
+                <button type="button"><a href="#">이력서 보기</a></button>
+                <button type="button">
+                  <a href="https://github.com/hogus24?tab=repositories"
+                    >깃허브 보기</a
+                  >
+                </button>
               </div>
               <!-- // .banner_btt -->
             </div>
@@ -230,12 +234,17 @@
             </div>
             <!-- // .section3_title -->
             <div class="section3_ct">
-              <div class="frame">
+              <div class="frame fr_right">
                 <img
                   src="image/Img_mock_up_pc.png"
                   alt="PC버전 목업 프레임 이미지"
                 />
-                <a href="#" class="hidden">
+                <img
+                  class="shadow_pc"
+                  src="image/Icon_shadow_1.png"
+                  alt="PC버전 목업 그림자"
+                />
+                <a href="https://hogus24.github.io/Project01/" class="hidden">
                   <img
                     src="image/Img_project1_pc.png"
                     alt="PC버전 김포국제공항 홈페이지 이미지"
@@ -243,8 +252,148 @@
                 </a>
               </div>
               <!-- // .frame -->
-              <div class="frame_txt"></div>
+              <div class="frame_txt">
+                <div class="project_title">
+                  <p>PROJECT 01</p>
+                  <p>김포국제공항</p>
+                  <ul>
+                    <li>#관공서</li>
+                    <!-- <li>#적응형</li> -->
+                    <!-- <li>#SUB_PAGE</li> -->
+                  </ul>
+                </div>
+                <!-- // .project_title -->
+                <div class="project_line"></div>
+                <div class="project_txt">
+                  <p>
+                    처음 진행하게 된 프로젝트인 관공서, 김포국제공항입니다.
+                    HTML로 전체적인 레이아웃과 구조를 잡고, CSS를 통해 디자인
+                    요소를 부여하였으며, Javascript와 jQuery를 이용해 동적인
+                    기능을 추가하여 프로젝트를 완성했습니다.
+                    <br />
+                    <br />
+                    김포국제공항 공지사항 페이지를 서브페이지로 작업했으며,
+                    모바일 적응형 웹 페이지까지 구현한 프로젝트입니다.
+                  </p>
+                  <ul>
+                    <li>제작기간</li>
+                    <li>사용프로그램</li>
+                  </ul>
+                  <ul>
+                    <li>3주</li>
+                    <li>HTML / CSS / Javascript / jQuery</li>
+                  </ul>
+                </div>
+                <!-- // .project_txt -->
+                <div class="project_line pj_ln_2"></div>
+                <div class="project_btt">
+                  <button type="button">
+                    <a
+                      href="https://hogus24.github.io/Project01/"
+                      target="_blank"
+                      >사이트 보기</a
+                    >
+                  </button>
+                  <button type="button">
+                    <a
+                      href="https://github.com/hogus24/Project01"
+                      target="_blank"
+                      >깃허브 보기</a
+                    >
+                  </button>
+                  <button type="button">
+                    <a href="#" target="_blank">기획서 보기</a>
+                  </button>
+                </div>
+              </div>
               <!-- // .frame_txt -->
+            </div>
+            <!-- // .section3_ct -->
+          </div>
+          <!-- // .section3_in -->
+        </div>
+        <!-- // #section3 -->
+        <div id="section4">
+          <div class="section4_in">
+            <div class="section4_title">
+              <p>PROJECT</p>
+              <p>PROJECT 02</p>
+            </div>
+            <!-- // .section4_title -->
+            <div class="section4_ct">
+              <div class="frame_txt">
+                <div class="project_title">
+                  <p>PROJECT 02</p>
+                  <p>하겐다즈</p>
+                  <ul>
+                    <li>#반응형</li>
+                    <li>#PC</li>
+                    <li>#Mobile</li>
+                  </ul>
+                </div>
+                <!-- // .project_title -->
+                <div class="project_line"></div>
+                <div class="project_txt">
+                  <p>
+                    두번째로 진행하게 된 프로젝트, 하겐다즈 홈페이지입니다. 웹
+                    표준과 웹 접근성을 고려하여 전체적으로 홈페이지를
+                    재디자인하였으며, CSS를 통해 Mediaquery로 반응형 홈페이지를
+                    제작했습니다.
+                    <br />
+                    <br />
+                    홈페이지를 새롭게 디자인하고, 각 분기별 디바이스 크기에 맞게
+                    레이아웃을 구성하는데 있어 Figma를 활용했습니다.
+                  </p>
+                  <ul>
+                    <li>제작기간</li>
+                    <li>사용프로그램</li>
+                  </ul>
+                  <ul>
+                    <li>2주</li>
+                    <li>HTML / CSS / Javascript / jQuery</li>
+                  </ul>
+                </div>
+                <!-- // .project_txt -->
+                <div class="project_line pj_ln_2"></div>
+                <div class="project_btt">
+                  <button type="button">
+                    <a
+                      href="https://hogus24.github.io/Project02/"
+                      target="_blank"
+                      >사이트 보기</a
+                    >
+                  </button>
+                  <button type="button">
+                    <a
+                      href="https://github.com/hogus24/Project02"
+                      target="_blank"
+                      >깃허브 보기</a
+                    >
+                  </button>
+                  <button type="button">
+                    <a href="#" target="_blank">기획서 보기</a>
+                  </button>
+                </div>
+              </div>
+              <!-- // .frame_txt -->
+              <div class="frame fr_left">
+                <img
+                  src="image/Img_mock_up_pc.png"
+                  alt="PC버전 목업 프레임 이미지"
+                />
+                <img
+                  class="shadow_pc"
+                  src="image/Icon_shadow_1.png"
+                  alt="PC버전 목업 그림자"
+                />
+                <a href="https://hogus24.github.io/Project02/" class="hidden">
+                  <img
+                    src="image/Img_project2_pc.png"
+                    alt="PC버전 하겐다즈 홈페이지 이미지"
+                  />
+                </a>
+              </div>
+              <!-- // .frame -->
             </div>
             <!-- // .section3_ct -->
           </div>
