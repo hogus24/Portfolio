@@ -94,19 +94,18 @@ main {
 }
 /* banner_in > banner_ct */
 .banner_ct {
-  max-width: 520px;
   width: 100%;
-  height: 700px;
-  margin-left: 210px;
+  height: auto;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 /* banner_ct > banner_txt */
 .banner_txt {
-  width: auto;
+  max-width: 520px;
+  width: 100%;
   height: auto;
-  margin-top: 200px;
+  margin: 200px 100px 0 210px;
 }
 .banner_txt > p {
   color: #333333;
@@ -116,7 +115,7 @@ main {
   letter-spacing: 0.5px;
   text-align: left;
 }
-.banner_txt > p:last-child {
+.banner_txt > p:nth-of-type(3) {
   margin-top: 20px;
   font-size: 40px;
   text-align: right;
@@ -127,12 +126,12 @@ main {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-.banner_txt > p:last-child > .span_st1 {
+.banner_txt > p:nth-of-type(3) > .span_st1 {
   font-size: 68px;
 }
-/* banner_ct > banner_btt */
+/* banner_txt > banner_btt */
 .banner_btt {
-  width: auto;
+  width: 100%;
   height: auto;
   margin-top: 40px;
 }
@@ -147,7 +146,7 @@ main {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
-.banner_btt > button:last-child {
+.banner_btt > button:nth-of-type(2) {
   margin-right: 0;
 }
 .banner_btt > button:hover {
@@ -160,11 +159,23 @@ main {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  line-height: 27px;
+  line-height: 60px;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .banner_btt > button:hover > a {
   color: #ffffff;
+}
+/* banner_ct > banner_img */
+.banner_img {
+  width: auto;
+  height: 700px;
+  margin: 0 auto 0 0;
+}
+.banner_img > img {
+  height: 100%;
 }
 /* ========================= section1 */
 #section1 {
@@ -209,19 +220,22 @@ main {
 }
 /* section1_ct > section1_img */
 .section1_img {
+  max-width: 423px;
+  width: 100%;
+  height: 500px;
   position: relative;
   z-index: 0;
 }
 .section1_img > img {
-  width: 423px;
+  width: 100%;
 }
 .section1_img > .rectangle {
-  width: 423px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 20px;
   left: 25px;
-  border: 10px solid rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
 /* section1_ct > section1_txt */
@@ -572,8 +586,11 @@ main {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  line-height: 21px;
+  line-height: 40px;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .project_btt > button:hover > a {
   color: #ffffff;
