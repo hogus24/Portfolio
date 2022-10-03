@@ -774,3 +774,108 @@ main {
 .frame_figma > img:last-of-type {
   margin-right: 0;
 }
+/* ========================= contact */
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: #f9f9f9;
+}
+/* contact > contact_in */
+.contact_in {
+  max-width: 1180px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+/* contact_in > contact_title */
+.contact_title {
+  padding-top: 100px;
+}
+.contact_title > p {
+  color: #f24c4c;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.contact_title > p:last-of-type {
+  color: #333333;
+  font-size: 36px;
+  line-height: 60px;
+}
+/* contact_in > contact_txt */
+.contact_txt {
+  margin-top: 67px;
+}
+.contact_txt > p {
+  color: #333333;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  text-align: center;
+}
+.contact_txt > p:nth-of-type(2) {
+  margin-top: 28px;
+  font-size: 22px;
+  line-height: 40px;
+}
+.contact_txt > p:nth-of-type(2) > span {
+  font-weight: 500;
+}
+/* contact_in > contact_me */
+.contact_me {
+  margin: 60px auto 0;
+  padding-bottom: 101px;
+  display: flex;
+  justify-content: center;
+}
+/* contact_me > phone */
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone > img {
+  width: 40px;
+  margin-right: 20px;
+}
+.phone > P {
+  color: #333333;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  text-align: center;
+}
+/* contact_me > email */
+.email {
+  display: flex;
+  align-items: center;
+}
+.email > img {
+  width: 40px;
+  margin-right: 20px;
+}
+.email > P {
+  color: #333333;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  text-align: center;
+}
+/* contact_me > contact_line */
+.contact_line {
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 40px;
+  margin: 0 40px;
+  background-color: #333333;
+}
