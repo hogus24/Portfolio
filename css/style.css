@@ -363,6 +363,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+/* my_skills > skill_1,2*/
 .skill_1 {
   width: calc(50% - 40px);
   height: 188px;
@@ -413,4 +414,69 @@ main {
   bottom: 0;
   left: 0;
   background: #f24c4c;
+}
+/* ========================= section3 */
+#section3 {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: #ffffff; */
+}
+/* section3 > section3_in */
+.section3_in {
+  max-width: 1180px;
+  width: 100%;
+  height: 920px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* height: auto; */
+  /* background-color: #ffffff; */
+}
+/* section3_in > section3_title */
+.section3_title {
+  padding-top: 100px;
+}
+.section3_title > p {
+  color: #f24c4c;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.section3_title > p:last-child {
+  color: #333333;
+  font-size: 36px;
+  line-height: 60px;
+}
+/* section3_in > section3_ct */
+.section3_ct {
+  width: auto;
+  height: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+/* section3_ct > frame */
+.frame {
+  max-width: 587px;
+  width: 100%;
+  position: relative;
+}
+.frame img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition-property: top;
+  transition-duration: 5s;
+}
+.frame .hidden {
+  width: 545px;
+  height: 308px;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: 49px;
+  left: 21px;
 }
