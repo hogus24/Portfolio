@@ -176,7 +176,7 @@ main {
   display: block;
   width: 20px;
   height: 20px;
-  background: rgba(242, 76, 76, 0.1);
+  background: rgba(242, 76, 76, 0.2);
   position: absolute;
   bottom: -150px;
   animation: bnAni 25s linear infinite;
@@ -669,6 +669,24 @@ main {
 }
 .fr_left {
   margin-left: 153px;
+}
+.move_LF {
+  transform: translateX(-800px);
+  opacity: 0;
+  transition: all 3s;
+}
+.move_LF.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+.move_RT {
+  transform: translateX(800px);
+  opacity: 0;
+  transition: all 3s;
+}
+.move_RT.on {
+  transform: translateX(0);
+  opacity: 1;
 }
 .frame img {
   width: 100%;

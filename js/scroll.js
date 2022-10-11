@@ -2,7 +2,9 @@ let win = $(window),
   sideNav = $(".sideNav li"),
   gnb = $(".gnb li"),
   sections = $(".section"),
-  contents = $(".content");
+  contents = $(".content"),
+  moveLF = $(".move_LF"),
+  moveRT = $(".move_RT");
 
 const gnbOff = () => {
   gnb.each(() => {
@@ -32,17 +34,20 @@ win.scroll(function () {
   let sct = win.scrollTop();
   contents.each(function (i) {
     if (sct >= contents.eq(i).offset().top - 300) {
-      $(".gnb li").eq(i).addClass("on").siblings().removeClass("on");
-      sideNav.eq(i).addClass("on").siblings().removeClass("on");
-      contents.eq(i).addClass("on").siblings().removeClass("on");
+      gnb.eq(i).addClass("on").siblings().removeClass("on");
     }
   });
 
   sections.each(function (i) {
     if (sct >= sections.eq(i).offset().top - 300) {
-      $(".sideNav li").eq(i).addClass("on").siblings().removeClass("on");
       sideNav.eq(i).addClass("on").siblings().removeClass("on");
-      sections.eq(i).addClass("on").siblings().removeClass("on");
+    }
+  });
+
+  sections.each(function (i) {
+    if (sct >= sections.eq(i).offset().top + 1800) {
+      moveLF.eq(i).addClass("on");
+      moveRT.eq(i).addClass("on");
     }
   });
 
