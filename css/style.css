@@ -34,6 +34,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: rgba(247, 76, 76, 0.8);
 }
+.sideNav li.on a {
+  border-radius: 3px;
+  background-color: rgba(247, 76, 76, 0.8);
+}
 .sideNav a span {
   display: inline-block;
   width: 80px;
@@ -49,6 +53,9 @@ body::-webkit-scrollbar-thumb {
   opacity: 0;
 }
 .sideNav li a:hover span {
+  opacity: 1;
+}
+.sideNav li.on a span {
   opacity: 1;
 }
 /* ============================== header */

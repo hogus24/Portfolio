@@ -37,5 +37,14 @@ win.scroll(function () {
       contents.eq(i).addClass("on").siblings().removeClass("on");
     }
   });
+
+  sections.each(function (i) {
+    if (sct >= sections.eq(i).offset().top - 300) {
+      $(".sideNav li").eq(i).addClass("on").siblings().removeClass("on");
+      sideNav.eq(i).addClass("on").siblings().removeClass("on");
+      sections.eq(i).addClass("on").siblings().removeClass("on");
+    }
+  });
+
   sct > 400 ? $("nav").addClass("sticky") : $("nav").removeClass("sticky");
 });
