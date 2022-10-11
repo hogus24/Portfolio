@@ -19,7 +19,7 @@ body::-webkit-scrollbar-thumb {
 }
 .sideNav li {
   display: block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .sideNav li a {
   display: inline-block;
@@ -294,6 +294,9 @@ main {
   margin-top: 20px;
   font-size: 40px;
   text-align: right;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .banner_txt > p > .span_st1 {
   color: #f24c4c;
@@ -303,6 +306,30 @@ main {
 }
 .banner_txt > p:nth-of-type(3) > .span_st1 {
   font-size: 68px;
+}
+.banner_txt svg {
+  width: 184.66px;
+  height: 102.23px;
+  margin-right: 10px;
+}
+.banner_txt svg text {
+  stroke: rgb(242, 76, 76);
+  stroke-width: 2;
+  font-size: 68px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  animation: textAni 5s infinite alternate;
+}
+@keyframes textAni {
+  0% {
+    stroke-dasharray: 0 100%;
+    fill: rgba(242, 76, 76, 0.5);
+  }
+  100% {
+    stroke-dasharray: 100% 100%;
+    fill: rgba(242, 76, 76, 1);
+  }
 }
 /* banner_txt > banner_btt */
 .banner_btt {
