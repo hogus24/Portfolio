@@ -7,8 +7,8 @@
     <meta name="robots" content="noindex, nofollow" />
     <!-- Meta - og -->
     <meta property="og:title" content="장소연의 포트폴리오입니다" />
-    <meta property="og:url" content="https://hogus24.github.io/Portfolio/" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hogus24.github.io/Portfolio/" />
     <!-- <meta property="og:image" content="...">  -->
     <meta property="og:site_name" content="장소연의 포트폴리오" />
     <meta
@@ -18,37 +18,43 @@
     <!-- Meta - tw -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="장소연의 포트폴리오입니다" />
+    <!-- <meta name="twitter:image" content="..." /> -->
     <meta
       name="twitter:description"
       content="무수한 발전에 필연적인 사람이 되도록 최선을 다하는 퍼블리셔의 포트폴리오입니다."
     />
-    <!-- <meta name="twitter:image" content="..." /> -->
     <title>장소연의 포트폴리오</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      #background {
-        width: 1440px;
-        height: 6660px;
-        margin: 0 auto;
-        background-image: url(image/Example2.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.9;
-        z-index: -100;
-      }
-    </style>
   </head>
   <body>
-    <!-- 임시설정 -->
-    <div id="background"></div>
     <div id="wrap">
-      <header id="header">
+      <ul class="sideNav">
+        <li class="on">
+          <a href="#banner"><span>Home</span></a>
+        </li>
+        <li>
+          <a href="#section1"><span>About</span></a>
+        </li>
+        <li>
+          <a href="#section3"><span>Project 1</span></a>
+        </li>
+        <li>
+          <a href="#section4"><span>Project 2</span></a>
+        </li>
+        <li>
+          <a href="#section5"><span>Project 3</span></a>
+        </li>
+        <li>
+          <a href="#section6"><span>Project 4</span></a>
+        </li>
+        <li>
+          <a href="#contact"><span>Contact</span></a>
+        </li>
+      </ul>
+      <!-- // .sideNav -->
+      <header id="header" class="all_header">
         <div class="header_in">
           <h1>
             <a href="https://hogus24.github.io/Portfolio/">
@@ -56,8 +62,8 @@
             </a>
           </h1>
           <nav>
-            <ul>
-              <li><a href="#banner">Home</a></li>
+            <ul class="gnb">
+              <li class="on"><a href="#banner">Home</a></li>
               <li><a href="#section1">About</a></li>
               <li><a href="#section3">Project</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -68,7 +74,20 @@
       </header>
       <!-- // #header -->
       <main>
-        <div id="banner">
+        <div id="banner" class="section content">
+          <ul class="banner_anime">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- banner_bg -->
           <div class="banner_in">
             <div class="banner_ct">
               <div class="banner_txt">
@@ -76,7 +95,7 @@
                   <span class="span_st1">우연</span>으로부터 시작된
                   <span class="span_st1">필연</span>
                 </p>
-                <p>또 다른 <span class="span_st1">작은 인연</span></p>
+                <p>또 다른 <span class="span_st1 .">작은 인연</span></p>
                 <p><span class="span_st1">"소연"</span>입니다.</p>
                 <div class="banner_btt">
                   <button type="button">
@@ -106,7 +125,7 @@
           <!-- // .banner_in -->
         </div>
         <!-- // #banner -->
-        <div id="section1">
+        <div id="section1" class="section content">
           <div class="section1_in">
             <div class="section1_title">
               <p>ABOUT</p>
@@ -240,7 +259,7 @@
           <!-- // .section2_in -->
         </div>
         <!-- // #section2 -->
-        <div id="section3">
+        <div id="section3" class="section content">
           <div class="section3_in">
             <div class="section3_title">
               <p>PROJECT</p>
@@ -276,7 +295,7 @@
                   <p>김포국제공항</p>
                   <ul>
                     <li>#관공서</li>
-                    <li>#적응형</li>
+                    <li>#PC</li>
                     <li>#SUB_PAGE</li>
                   </ul>
                 </div>
@@ -319,7 +338,7 @@
                       >깃허브 보기</a
                     >
                   </button>
-                  <button type="button">
+                  <button type="button" style="display: none">
                     <a href="#" target="_blank">기획서 보기</a>
                   </button>
                 </div>
@@ -332,7 +351,7 @@
           <!-- // .section3_in -->
         </div>
         <!-- // #section3 -->
-        <div id="section4">
+        <div id="section4" class="section">
           <div class="section4_in">
             <div class="section4_title">
               <p>PROJECT</p>
@@ -389,7 +408,7 @@
                       >깃허브 보기</a
                     >
                   </button>
-                  <button type="button">
+                  <button type="button" style="display: none">
                     <a href="#" target="_blank">기획서 보기</a>
                   </button>
                 </div>
@@ -424,7 +443,7 @@
           <!-- // .section4_in -->
         </div>
         <!-- // #section4 -->
-        <div id="section5">
+        <div id="section5" class="section">
           <div class="section5_in">
             <div class="section5_title">
               <p>PROJECT</p>
@@ -459,7 +478,7 @@
                   <p>PROJECT 03</p>
                   <p>위엔터테인먼트</p>
                   <ul>
-                    <li>#반응형</li>
+                    <li>#PC</li>
                     <li>#SCSS</li>
                   </ul>
                 </div>
@@ -512,7 +531,7 @@
           <!-- // .section5_in -->
         </div>
         <!-- // #section5 -->
-        <div id="section6">
+        <div id="section6" class="section">
           <div class="section6_in">
             <div class="section6_title">
               <p>PROJECT</p>
@@ -586,7 +605,7 @@
           <!-- // .section6_in -->
         </div>
         <!-- // #section6 -->
-        <div id="contact">
+        <div id="contact" class="section content">
           <div class="contact_in">
             <div class="contact_title">
               <p>CONTACT</p>
@@ -633,10 +652,25 @@
       </footer>
       <!-- // footer -->
     </div>
+    <!-- // #wrap -->
+    <div class="top_wrap">
+      <svg
+        class="top_circle svg_content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
     <!-- JS -->
     <script src="js/mock_up.js"></script>
     <!-- JQ -->
     <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/skill.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
