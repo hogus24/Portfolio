@@ -91,18 +91,18 @@ body::-webkit-scrollbar-thumb {
 }
 /* logo */
 .header_in > h1 {
-  width: 95px;
+  width: auto;
   height: 80px;
   display: flex;
   align-items: center;
 }
 .header_in > h1 > a {
-  width: 100%;
-  height: auto;
+  display: inline-block;
+  height: 60px;
 }
 .header_in > h1 > a > img {
-  width: 95px;
-  vertical-align: middle;
+  height: 100%;
+  opacity: 0.9;
 }
 /* nav */
 .header_in > nav {
