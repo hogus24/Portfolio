@@ -1,5 +1,5 @@
 let win = $(window),
-  sideNav = $(".sideNav li"),
+  sideNav = $(".side_nav li"),
   gnb = $(".gnb li"),
   sections = $(".section"),
   contents = $(".content"),
