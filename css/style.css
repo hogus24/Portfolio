@@ -1085,8 +1085,32 @@ main {
   width: calc(50% - 20px);
   margin-right: 40px;
 }
-.frame_figma > img:last-of-type {
-  margin-right: 0;
+/* frame_figma > figma_mockup */
+.frame_figma .figma_mockup {
+  width: calc(50% - 20px);
+  background-image: url(../image/Img_project4_mb_2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+/* figma_mockup > figma_img */
+.figma_mockup .figma_img {
+  width: 244px;
+  height: 557px;
+  border-radius: 31px;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  overflow: hidden;
+}
+.figma_img iframe {
+  display: block;
+  width: 106%;
+  height: 109%;
+  position: absolute;
+  left: -3%;
 }
 /* ========================= contact */
 #contact {
