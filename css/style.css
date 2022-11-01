@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-/* logo */
+/* header_in > logo */
 .header_in > h1 {
   width: auto;
   height: 80px;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   opacity: 0.8;
 }
-/* nav */
+/* header_in > nav */
 .header_in > nav {
   display: flex;
   align-items: center;
@@ -163,6 +163,7 @@ main {
   background-color: #f9f9f9;
   position: relative;
 }
+/* banner > banner_anime */
 .banner_anime {
   width: 100%;
   height: 100%;
@@ -218,7 +219,6 @@ main {
   height: 110px;
   animation-delay: 3s;
 }
-
 .banner_anime li:nth-child(7) {
   left: 35%;
   width: 150px;
@@ -617,7 +617,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-/* my_skills > skill_1,2*/
+/* my_skills > skill_1,2 */
 .skill_1 {
   width: calc(50% - 40px);
   height: 188px;
@@ -1233,6 +1233,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .footer_in > p {
   color: #ffffff;
@@ -1242,6 +1243,20 @@ footer {
   letter-spacing: 0.5px;
   line-height: 20px;
   text-align: center;
+}
+.footer_in .validator {
+  margin-top: 20px;
+}
+.footer_in .validator a {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+}
+.footer_in .validator a:nth-of-type(2) {
+  margin-right: 0;
+}
+.footer_in .validator a img {
+  width: 100%;
 }
 /* ============================== top button */
 .top_wrap {
